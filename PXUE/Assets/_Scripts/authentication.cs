@@ -61,6 +61,7 @@ public class authentication : MonoBehaviour {
         if (CheckUserInDB(login_field.text, pass_field.text))
         {
             Debug.Log("u r in system");
+            GameObject.Find("SceneManager").GetComponent<scene_manager>().LoginToMenu();
         }
         else {
             Debug.Log("smth wrong");
